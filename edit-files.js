@@ -1,9 +1,8 @@
 'use strict';
 
-let fs = require( 'fs' );
+const fs = require( 'fs' );
 
 let file = `./files/test.txt`;
-
 let data = fs.readFileSync(file);
 console.log( 'before', data.toString() );
 
