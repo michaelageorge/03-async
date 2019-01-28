@@ -1,31 +1,27 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## 02 - Asynchronicity
+## Lab 03 - Asynchronicity
 
-### Author: Michael George, Code 401d__
+### Author: Michael George, Code 401d28
 
 ### Links and Resources
 [![Build Status](https://travis-ci.com/michaelageorge/03-async.svg?branch=master)](https://travis-ci.com/michaelageorge/03-async)
 
 * [repo](https://github.com/michaelageorge/03-async)
 * [travis]((https://travis-ci.com/michaelageorge/03-async))
-* [server](https://lab02-inheritance-george.herokuapp.com/)
 
 ### Modules
-#### `modulename.js`
+
+#### `reader-fixed.js`
 ##### Exported Values and Methods
+Will export a function that takes in an array of file names and a callback function as arguments.
+###### `reader-fixed(files, callback) -> error or [file content]`
 
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+#### `reader-callbacks-array.js`
+##### Exported Values and Methods
+Will export a function that takes an array of file names and a callback function as arguments.
+###### `reader-callbacks-array(files, callback) -> error or [file content]`
 
 #### Running the app
 * `npm start`
@@ -35,9 +31,7 @@ Usage Notes or examples
   * Returns a JSON object with xyz in it.
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* Tests can be found in the tests folder
+* reader-fixed.test.js
+* reader-callbacks-array.test.js
 
-#### UML
-Link to an image of the UML for your application and response to events
